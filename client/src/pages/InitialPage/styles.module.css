@@ -1,0 +1,17 @@
+.initialPageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+
+.initialPageBackgrond {
+    background-image: url(../../assets/initial-page-background.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+}

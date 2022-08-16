@@ -1,0 +1,72 @@
+.cardsContainer {
+    /* border: solid 1px red; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    justify-items: center;
+    padding: 32px 0;
+    width: 100%;
+}
+
+
+@media (max-width: 1600px) {
+    .cardsContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1200px) {
+    .cardsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .cardsContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.page {
+    display: flex;
+}
+
+.pokemonsPage {
+    width: calc(100vw - 250px);
+    margin-left: 220px;
+}
+
+body {
+    /* background-image: url(https://external-preview.redd.it/NXrR_qnMRHrwUoE8pbeiX26fq4mNctFsmdEghRVApSQ.jpg?auto=webp&s=b18e1b0df84f417036d4e1ac0affb6245a071ebf); */
+    background-image: url(../../assets/Pokemon\ black\ background\ wallpaper.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-blend-mode: exclusion;
+    background-position: 0 calc(100vh - 170px);
+    background-attachment: fixed;
+    /* animation: animatedBackground 200s linear infinite; */
+    background-color: rgb(2, 0, 114);
+    color: #fff;
+}
+
+@keyframes animatedBackground {
+    /* from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 100%;
+    } */
+
+    0% {
+        background-position: 0% 0%
+    }
+
+    50% {
+        background-position: 0% 100%
+    }
+
+    100% {
+        background-position: 0% 0%
+    }
+}

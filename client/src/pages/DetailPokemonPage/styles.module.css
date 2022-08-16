@@ -1,0 +1,64 @@
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    perspective: 100px;
+}
+
+.img {
+    height: 500px;
+    width: 500px;
+    margin: 30px;
+}
+
+.info,
+.estadisticas {
+    height: 300px;
+    width: 20vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 32px;
+    align-items: center;
+}
+
+.info > h3,
+.estadisticas > h3 {
+    margin: 0;
+}
+.estadisticas > div {
+    background-color: green;
+}
+
+.typesContainer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.type {
+    background-color: blue;
+    width: 4vw;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+
+.label {
+    text-align: right;
+}
+
+.seccion {
+    /* transform-style: preserve-3d; */
+    transform: rotateY(-5deg);
+}
+
+.info {
+    /* transform-style: preserve-3d; */
+    transform: rotateY(5deg);
+}
+.page > button{
+    margin-bottom: 500px;
+}

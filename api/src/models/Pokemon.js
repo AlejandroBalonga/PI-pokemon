@@ -15,14 +15,13 @@ module.exports = (sequelize) => {
   return Pokemon.init(
     {
       id: {
-        // type: DataTypes.UUID,//estos son id que pueden tener letras
-        // defaultValue:DataTypes.UUIDV4,
-        type: DataTypes.INTEGER,
-        autoIncrement: true,
-        primaryKey: true,
+        type: DataTypes.UUID,//estos son id que pueden tener letras
+        defaultValue:DataTypes.UUIDV4,
+        primaryKey: true
       },
       name: {
         type: DataTypes.STRING,
+        unique:true,
         allowNull: false,
       },
       vida: {

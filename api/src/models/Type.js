@@ -2,11 +2,11 @@ const { DataTypes, Model } = require("sequelize");
 // Exportamos una funcion que define el modelo
 // Luego le injectamos la conexion a sequelize.
 
-class Tipo extends Model {};
+class Type extends Model {};
 
 module.exports = (sequelize) => {
   // defino el modelo
-  return Tipo.init(
+  return Type.init(
     {
       id: {
         type: DataTypes.INTEGER,
@@ -17,6 +17,6 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
       },
     },
-    { sequelize, modelName: "Tipo" }
+    { sequelize, modelName: "Type" }
   );
 };
